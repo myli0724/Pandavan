@@ -1,0 +1,28 @@
+https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=70fea715-8c27-4d9f-811c-9a79ef7d089a
+
+curl -k 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=70fea715-8c27-4d9f-811c-9a79ef7d089a' \
+   -H 'Content-Type: application/json' \
+   -d '
+   {
+    	"msgtype": "text",
+    	"text": {
+        	"content": "hello world"
+    	}
+   }'
+
+curl -k 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=70fea715-8c27-4d9f-811c-9a79ef7d089a' \
+   -H 'Content-Type: application/json' \
+   -d '
+{
+    "msgtype": "news",
+    "news": {
+       "articles" : [
+           {
+               "title" : "打工人日历",
+               "description" : "***",
+               "url" : "https://api.vvhan.com/api/moyu",
+               "picurl" : "https://api.vvhan.com/api/moyu"
+           }
+        ]
+    }
+}'
